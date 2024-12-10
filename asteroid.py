@@ -17,8 +17,8 @@ class Asteroid(CircleShape):
         new_radius = self.radius - ASTEROID_MIN_RADIUS
         ast1 = Asteroid(self.position.x, self.position.y, new_radius)
         ast2 = Asteroid(self.position.x, self.position.y, new_radius)
-        ast1.velocity = angle1 * 1.2
-        ast2.velocity = angle2 * 1.2  
+        ast1.velocity = angle1 *2
+        ast2.velocity = angle2 * 2 
 
     def draw(self, screen):
         pygame.draw.circle(screen, "white", self.position, self.radius)
